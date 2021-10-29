@@ -1,8 +1,13 @@
 language: java
 jdk:
-  - openjdk8
+- openjdk8
 script: "./mvnw clean install"
 before_install:
-  - chmod +x mvnw
+- chmod +x mvnw
 notifications:
   email: jmayta17@hotmail.com
+deploy:
+  provider: heroku
+  app: upc-202102-wx61-sale-system
+  api_key:
+    secure: OHQqHKkamdA0esyR0jhuDbtNBVJLVfncu3lzDBVuyt5fbvkGeOmPaahWs/3WuMs8bySMC6R7F5UsbzEnARWrueaFqsuR8DDW2juVQtVBT3SdapiOpy16aYbBtGdLacAI7WfGeMsgPNsP49uM/eVq2y7ubbVHsw/znNjnnTXZmbPsKZPbXSxOF2MtV0+BIo/7ICRPsSN//F54sZ/aWyfs1K1NfYvO+TeL9PEq4kJTbu5/x4YSQuK3S87HZvfDznfG6aXIbpj+1uBippk+QLqnw3qqFKrcJS7qGLHeQZIWmt+V2GcnwhlKJMbvZg6jq1wAZt186lX42nzgQx6tWzBcAhH//8pf94IRWbdzBWeBs1Ha/yyBWE79EoUMhtWDMYjkQSdcxqnR39I/HtNvT7nIxOpFpUDPvP99mU/eBX8vEbh3hsnTZYyqAcJdEfLjIIJtn5BDFTRq5OWKFGbwlOj3BjWMiadZdVZGOgQuuJgyMJuV+G6i06EqCAWIZYUMkr1+pDxd7kfbiPirUCDYgLyMU6LNDTH8svomeLw7e7qhwlvQ3FzCxooaCokPO91VR5bqf2FZ5V6z1UFk3LBxVb9s11N2/GlFVO1dNK2Hm5QR90UmTnYkNUWlexJ9mx5fkjur2JlmdhktrMqu8cS0FtuHT8HaOqUQ/5T+l+GGCgUp5IE=
