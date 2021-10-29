@@ -12,7 +12,7 @@
         </div>
         <form th:object="${producto}" th:action="@{/vender/agregar}" method="post">
             <div class="form-group">
-                <label for="codigo">Código de barras de los productos</label>
+                <label for="codigo">Código de barra de los productos</label>
                 <input autofocus autocomplete="off" th:field="*{codigo}" id="codigo"
                        placeholder="Por favor, escanea el código o escríbelo y luego presiona Enter"
                        type="text"
